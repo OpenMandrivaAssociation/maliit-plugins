@@ -1,6 +1,6 @@
 Name:          maliit-plugins
 Version:       0.94.2
-Release:       1
+Release:       2
 Summary:       Input method plugins
 
 Group:         System/Libraries
