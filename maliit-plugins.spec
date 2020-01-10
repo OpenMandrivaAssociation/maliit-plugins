@@ -24,7 +24,7 @@ link currently uses D-Bus.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %qmake_qt4 -r CONFIG+=notests CONFIG+=disable-nemo-keyboard LIBDIR=%{_libdir} MALIIT_DEFAULT_PROFILE=olpc-xo
