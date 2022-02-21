@@ -1,19 +1,19 @@
 Name:          maliit-plugins
-Version:       0.94.2
-Release:       2
+Version:       0.99.1
+Release:       1
 Summary:       Input method plugins
 
 Group:         System/Libraries
 License:       BSD
 URL:           http://maliit.org/
-Source0:       http://maliit.org/releases/%{name}/%{name}-%{version}.tar.bz2
+Source0:       http://maliit.org/releases/%{name}/%{name}-%{version}.tar.gz
 Patch0:        olpc_xo_layout_modifications.patch
 
 BuildRequires: pkgconfig(dbus-1)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(gobject-introspection-1.0)
 BuildRequires: pkgconfig(maliit-framework)
-BuildRequires: qt4-devel
+#BuildRequires: qt4-devel
 BuildRequires: doxygen
 
 %description
@@ -27,7 +27,7 @@ link currently uses D-Bus.
 %autopatch -p1
 
 %build
-%qmake_qt4 -r CONFIG+=notests CONFIG+=disable-nemo-keyboard LIBDIR=%{_libdir} MALIIT_DEFAULT_PROFILE=olpc-xo
+%qmake CONFIG+=notests CONFIG+=disable-nemo-keyboard LIBDIR=%{_libdir} MALIIT_DEFAULT_PROFILE=olpc-xo
 %make
 
 %install
