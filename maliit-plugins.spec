@@ -5,7 +5,7 @@ Summary:       Input method plugins
 
 Group:         System/Libraries
 License:       BSD
-URL:           http://maliit.org/
+URL:           https://maliit.org/
 Source0:       http://maliit.org/releases/%{name}/%{name}-%{version}.tar.gz
 Patch0:        olpc_xo_layout_modifications.patch
 
