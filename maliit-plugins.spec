@@ -9,6 +9,7 @@ URL:           https://maliit.org/
 Source0:       http://maliit.org/releases/%{name}/%{name}-%{version}.tar.gz
 Patch0:        olpc_xo_layout_modifications.patch
 
+BuildRequires:	make
 BuildRequires: pkgconfig(dbus-1)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(gobject-introspection-1.0)
